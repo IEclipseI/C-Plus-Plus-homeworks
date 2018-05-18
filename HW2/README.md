@@ -1,1 +1,1 @@
-Смирнов Роман M3137, HW2            
+Roman Smirnov M3137, HW2            
