@@ -1,10 +1,8 @@
 #ifndef BIG_INTEGER_H
 #define BIG_INTEGER_H
 
-
 #include <big_integer.h>
 #include <cstddef>
-#include <gmp.h>
 #include <iosfwd>
 #include <cstdint>
 #include "optimized_vector/op_vector.h"
