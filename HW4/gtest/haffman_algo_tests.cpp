@@ -40,30 +40,30 @@ TEST(correctness, empty)
   EXPECT_EQ(compare_two_files("../gtest/empty_test.txt", "decoded_empty_test.txt"), true);
 }
 
-//TEST(correctness, so_many_0_test)
-//{
-//  class_helper helper;
-//  huffman_coding huff;
-//  helper.compress("../gtest/so_many_0_test.txt", huff);
-//  helper.decompress("so_many_0_test.txt.huff", huff);
-//  EXPECT_EQ(compare_two_files("../gtest/so_many_0_test.txt", "decoded_so_many_0_test.txt"), true);
-//}
-//
-//TEST(correctness, one_mb)
-//{
-//  class_helper helper;
-//  huffman_coding huff;
-//  helper.compress("../gtest/test1Mb.txt", huff);
-//  helper.decompress("test1Mb.txt.huff", huff);
-//  EXPECT_EQ(compare_two_files("../gtest/test1Mb.txt", "decoded_test1Mb.txt"), true);
-//}
+TEST(correctness, so_many_0_test)
+{
+ class_helper helper;
+ huffman_coding huff;
+ helper.compress("../gtest/so_many_0_test.txt", huff);
+ helper.decompress("so_many_0_test.txt.huff", huff);
+ EXPECT_EQ(compare_two_files("../gtest/so_many_0_test.txt", "decoded_so_many_0_test.txt"), true);
+}
 
-//TEST(correctness, compress_eighty_mb)
-//{
-//  class_helper helper;
-//  huffman_coding huff;
-//  helper.compress("../gtest/test80Mb.txt", huff);
-//}
+TEST(correctness, one_mb)
+{
+ class_helper helper;
+ huffman_coding huff;
+ helper.compress("../gtest/test1Mb.txt", huff);
+ helper.decompress("test1Mb.txt.huff", huff);
+ EXPECT_EQ(compare_two_files("../gtest/test1Mb.txt", "decoded_test1Mb.txt"), true);
+}
+
+TEST(correctness, compress_eighty_mb)
+{
+ class_helper helper;
+ huffman_coding huff;
+ helper.compress("../gtest/test80Mb.txt", huff);
+}
 
 //TEST(correctness, eighty_mb)
 //{
@@ -80,5 +80,5 @@ TEST(correctness, jpg_test)
   huffman_coding huff;
   helper.compress("../gtest/jpg_test.jpg", huff);
   helper.decompress("jpg_test.jpg.huff", huff);
-//  EXPECT_EQ(compare_two_files("../gtest/jpg_test.jpg", "decoded_jpg_test.jpg"), true);
+ EXPECT_EQ(compare_two_files("../gtest/jpg_test.jpg", "decoded_jpg_test.jpg"), true);
 }
