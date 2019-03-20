@@ -7,4 +7,4 @@
 BigInteger implementation with copy-on-write and small object optimizations.
 
 ### HW4
-Command line utility and library for huffman comressing files
+Command line utility and library for huffman comressing
